@@ -11,7 +11,6 @@ or add this line into your `Gemfile`
     
     gem 'lasagna'
 
-
 ## Usage
 First, add this line into a needed class or module:
 
@@ -27,8 +26,6 @@ That's it, you can start using it:
     #     include_types: true,
     #     transform_keys: nil } # transform_keys is not supported yet
 
-
 ##Links
-
 - [JSON.parse](http://ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html) - Parses a json string into a ruby hash object.
 - [json:api](http://jsonapi.org/) - Json format we are talking about here. You can find the full specification and links for other implementations there.
