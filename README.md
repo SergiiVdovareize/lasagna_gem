@@ -26,6 +26,7 @@ That's it, you can start using it:
     #     include_types: true,
     #     transform_keys: nil } # transform_keys is not supported yet
 
+
 ##Links
 
 - [JSON.parse](http://ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html) - Parses a json string into a ruby hash object.
