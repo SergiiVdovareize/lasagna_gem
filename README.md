@@ -1,7 +1,7 @@
 # lasagna_gem
 An extremely light ruby gem for jsonapi parsing
 
-# Install
+## Install
 
 As usual, paste this line into your command line
 
@@ -10,6 +10,7 @@ As usual, paste this line into your command line
 or add this line into your `Gemfile`
     
     gem 'lasagna'
+
 
 ## Usage
 First, add this line into a needed class or module:
