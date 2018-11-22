@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'lasagna'
-  s.version     = '0.2.1'
-  s.date        = '2018-02-08'
+  s.version     = '0.2.2'
+  s.date        = '2018-11-22'
   s.summary     = 'jsonapi parser'
   s.description = 'An extremely light ruby gem for jsonapi parsing'
   s.authors     = ['Sergey Vdovareize']
