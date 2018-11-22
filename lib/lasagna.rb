@@ -32,6 +32,7 @@ class Lasagna
         row = row.merge item['attributes']
         unless item['relationships'].nil?
           item['relationships'].each do |key, r|
+            next if r['data'].nil?
             type = r['data']['type']
             id = r['data']['id']
             row[key] = inclusion[type] && inclusion[type][id]
@@ -66,3 +67,11 @@ class Lasagna
   end
 
 end
+
+
+# NoMethodError: undefined method `[]' for nil:NilClass
+# /home/dedal/.rvm/gems/ruby-2.3.3/gems/lasagna-0.1.2/lib/lasagna.rb:13:in `block (2 levels) in parse'
+# /home/dedal/.rvm/gems/ruby-2.3.3/gems/lasagna-0.1.2/lib/lasagna.rb:12:in `each'
+# /home/dedal/.rvm/gems/ruby-2.3.3/gems/lasagna-0.1.2/lib/lasagna.rb:12:in `block in parse'
+# /home/dedal/.rvm/gems/ruby-2.3.3/gems/lasagna-0.1.2/lib/lasagna.rb:10:in `each'
+# /home/dedal/.rvm/gems/ruby-2.3.3/gems/lasagna-0.1.2/lib/lasagna.rb:10:in `parse'
